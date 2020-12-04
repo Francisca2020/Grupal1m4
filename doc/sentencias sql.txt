@@ -1,0 +1,32 @@
+CREATE TABLE Cliente
+ 
+(           ID_Cliente   BIGSERIAL,
+            Nombre       VARCHAR(25),
+            Apellido     VARCHAR(50),
+            Domicilio    VARCHAR(500),
+            ID_Region    NUMERIC,
+            ID_Ciudad    NUMERIC,
+            ID_Compra    NUMERIC
+);
+
+
+SELECT * FROM Cliente;
+INSERT INTO Cliente (Nombre, Apellido, Domicilio, ID_Region, ID_Ciudad, ID_Compra) VALUES    
+('Francisco', 'Cuello', 'Calle Cordova #56', 5, 5, 1), ('Francisca', 'Martinez', 'Calle Alonso #45', 14, 6, 2), ('Alba', 'Carvajal', 'Calle Ojeda #40',	7, 7, 3), 
+('Juan', 'Cabello', 'Calle Carla #51', 1, 8, 4);
+
+SELECT Nombre, Apellido FROM Cliente;
+
+DELETE FROM Cliente WHERE Nombre = 'Francisco';
+SELECT * FROM Cliente;
+
+INSERT INTO Cliente (Nombre, Apellido, Domicilio, ID_Region, ID_Ciudad, ID_Compra) VALUES    
+('Maria', 'Cruz', 'Santa Maria #120', 6, 1, 2);
+
+
+
+
+
+
+
+
